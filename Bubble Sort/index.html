@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="bubble.js"></script>
+    </head>
+    <body>
+        <input type="text" id="i1"></input>
+        <input type="text" id="i2"></input>
+        <input type="text" id="i3"></input>
+        <input type="text" id="i4"></input>
+        <input type="text" id="i5"></input>
+        <input type="text" id="i6"></input>
+        <br />
+        <script>
+            var i1, i2, i3, i4, i5, i6;
+            function getTextFieldValues() {
+                i1 = parseInt(document.getElementById('i1').value);
+                i2 = parseInt(document.getElementById('i2').value);
+                i3 = parseInt(document.getElementById('i3').value);
+                i4 = parseInt(document.getElementById('i4').value);
+                i5 = parseInt(document.getElementById('i5').value);
+                i6 = parseInt(document.getElementById('i6').value);
+            }
+        </script>
+        <button onclick="getTextFieldValues(); document.getElementById('output').innerHTML = ascending([i1, i2, i3, i4, i5, i6]);">Ascending</button>
+        <button onclick="getTextFieldValues(); document.getElementById('output').innerHTML = descending([i1, i2, i3, i4, i5, i6]);">Descending</button>
+        <p id="output"></p>
+    </body>
+</html>
