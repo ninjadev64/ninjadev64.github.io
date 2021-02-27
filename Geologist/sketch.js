@@ -5,6 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var hammer, rubber, plane, stone;
+var sand1, sand2, sand3, sand4, sand5;
 
 function preload() {
 	
@@ -21,6 +22,12 @@ function setup() {
 	plane = new Plane(400, 685);
 	stone = new Stone(400, 600);
 
+	sand1 = new Sand(100, 650);
+	sand2 = new Sand(200, 650);
+	sand3 = new Sand(300, 650);
+	sand4 = new Sand(400, 650);
+	sand5 = new Sand(500, 650);
+
 	Engine.run(engine); 
 }
 
@@ -33,5 +40,11 @@ function draw() {
   rubber.display();
   plane.display();
   stone.display();
+
+  sand1.display();
+  sand2.display();
+  sand3.display();
+  sand4.display();
+  sand5.display();
   drawSprites();
 }
