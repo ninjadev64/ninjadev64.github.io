@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <script src="palindrome.js"></script>
+    </head>
+    <body>
+        <input type="text" id="i1"></input>
+        <script>
+            var i1;
+            function getTextFieldValues() {
+                i1 = document.getElementById('i1').value;
+            }
+        </script>
+        <button onclick="getTextFieldValues(); console.log(isPalindrome(i1))">Click me</button>
+    </body>
+</html>
